@@ -31,7 +31,7 @@ let hotel_dict = [hemer, tyfoul, gromur, boston]
 
 
 for (let i = 0; i < hotel_dict.length; i += 1){
-    container.innerHTML += hotem_dict[i].toHtml()//Добавление карточек отелей в контейнер на экране
+    container.innerHTML += hotel_dict[i].toHtml()//Добавление карточек отелей в контейнер на экране
 }
 
 function search_func(){
