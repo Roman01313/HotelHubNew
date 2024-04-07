@@ -1,163 +1,336 @@
 
 
-header{
-    /* Прямоугольник 1 */
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    right: 100%;
-    top: 0px;
-    bottom: 0px;
-    background-image: linear-gradient(180.00deg, rgb(216, 136, 72),rgba(53, 49, 159, 0.809) 100%),
-    url("src/png-clipart-casino-lisboa-macau-hotel-gratis-apartment-hotel-lisboa-beach-building.png");
-    background-size:cover;
-    background-repeat: no-repeat;
-}
-
-
-
-
-.title{
-    /* Hotel Hub */
-    position: absolute;
-    width: 342px;
-    height: 85px;
-    left: 92px;
-    right: 846px;
-    top: 197px;
-    bottom: 2216px;
-    color: rgb(0, 0, 0);
-    font-family:"Gill Sans", sans-serif ;
-    font-size: 50px;
-    font-weight: 800;
-    line-height: 75px;
-    letter-spacing: 0px;
-    text-align: left;
-
-}
-
-.ol{
-    position: absolute;
-    width: 342px;
-    height: 85px;
-    left: 92px;
-    right: 846px;
-    top: 197px;
-    bottom: 2216px;
-}
-
-.li{
-    /* ~Бронирование отелей быстро и легко ~Множество броней отелей со всего мира ~Долгий опыт ~Качественное обслуживание */
-    position:relative;
-    width: 100%;
-    height: 30%;
-    left: 1px;
-    right: 50px;
-    top: 100px;
-    font-size: large;
-    font-family: "Gill Sans", sans-serif;
-
-}
-
-.nav{
-    /* Прямоугольник 2 */
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 64px;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 2434px;
-    box-shadow: 0px 27px 75px -12px rgb(154, 95, 48);
-    background: rgba(30, 24, 47, 0.47);
-
-}
-
-.btn{
-
-    width: 10%;
-    height: 40px;
-    margin-top: 15px;
-    align-items: center;
-    padding-left: 2.5%;
-    margin-left: 50px;
-    border-radius: 25px; 
-    border-color: transparent ;
-    background: rgb(129, 111, 178);
-
-}
-
-.container{
-    background-color: aqua;
-    position: relative;
-
-}
-
-
-
-.container .wrapper{
-    width: 50%;
-    height: 50%;
-    box-shadow: 10px 10px 10px black;
-    margin: 5rem auto;
-}
-
-.container .wrapper-holder{
-    display: grid;
-    grid-template-columns: repeat(4, 100%);
-    height: 100%;
-    width: 100%;
-    position: absolute;
-}
-
-.goto{
-    animation-name: goto_btn;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    transform: scale(0.7);
-    transform: translateX(50px);
-    /* Прямоугольник 3 */
-    position: absolute;
-    width: 389px;
-    height: 85px;
-    left: 92px;
-    right: 799px;
-    top: 533px;
-    bottom: 1880px;
-    border-radius: 42.5px; 
-    background: rgba(222, 139, 72, 0.82);
-    border-color: transparent;
-    color: rgba(28, 17, 96, 0.57);
-    font-family: "Gill Sans", sans-serif;
-    font-size: 35px;
-    font-weight: 400;
-    line-height: 44px;
-    letter-spacing: 0px;
-    text-align: center;
+@media (orientation: landscape){
+    header{
+        /* Прямоугольник 1 */
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        right: 100%;
+        top: 0px;
+        bottom: 0px;
+        background-image: linear-gradient(180.00deg, rgb(216, 136, 72),rgba(53, 49, 159, 0.809) 100%),
+        url("src/png-clipart-casino-lisboa-macau-hotel-gratis-apartment-hotel-lisboa-beach-building.png");
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
     
-}
-
-.goto:hover{
-    box-shadow: 10px 10px 10px rgba(40, 9, 87, 0.454);
-}
-
-@keyframes goto_btn {
-
-    0%{
-        transform:scale(1)
-
+    
+    
+    
+    .title{
+        /* Hotel Hub */
+        position: absolute;
+        width: 342px;
+        height: 85px;
+        left: 92px;
+        right: 846px;
+        top: 197px;
+        bottom: 2216px;
+        color: rgb(0, 0, 0);
+        font-family:"Gill Sans", sans-serif ;
+        font-size: 50px;
+        font-weight: 800;
+        line-height: 75px;
+        letter-spacing: 0px;
+        text-align: left;
+    
     }
-    75%{
+    
+    .ol{
+        position: absolute;
+        width: 342px;
+        height: 85px;
+        left: 92px;
+        right: 846px;
+        top: 197px;
+        bottom: 2216px;
+    }
+    
+    .li{
+        /* ~Бронирование отелей быстро и легко ~Множество броней отелей со всего мира ~Долгий опыт ~Качественное обслуживание */
+        position:relative;
+        width: 100%;
+        height: 30%;
+        left: 1px;
+        right: 50px;
+        top: 100px;
+        font-size: large;
+        font-family: "Gill Sans", sans-serif;
+    
+    }
+    
+    .nav{
+        /* Прямоугольник 2 */
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 64px;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 2434px;
+        box-shadow: 0px 27px 75px -12px rgb(154, 95, 48);
+        background: rgba(30, 24, 47, 0.47);
+    
+    }
+    
+    .btn{
+    
+        width: 10%;
+        height: 40px;
+        margin-top: 15px;
+        align-items: center;
+        padding-left: 2.5%;
+        margin-left: 50px;
+        border-radius: 25px; 
+        border-color: transparent ;
+        background: rgb(129, 111, 178);
+    
+    }
+    
+    .container{
+        background-color: aqua;
+        position: relative;
+    
+    }
+    
+    
+    
+    .container .wrapper{
+        width: 50%;
+        height: 50%;
+        box-shadow: 10px 10px 10px black;
+        margin: 5rem auto;
+    }
+    
+    .container .wrapper-holder{
+        display: grid;
+        grid-template-columns: repeat(4, 100%);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    a{
+        text-decoration: none
+    }
+    
+    .goto{
+        animation-name: goto_btn;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        transform: scale(0.7);
         transform: translateX(50px);
-        transform: scale(1.1);
+        /* Прямоугольник 3 */
+        position: absolute;
+        width: 389px;
+        height: 85px;
+        left: 92px;
+        right: 799px;
+        top: 533px;
+        bottom: 1880px;
+        border-radius: 42.5px; 
+        background: rgba(222, 139, 72, 0.82);
+        border-color: transparent;
+        color: rgba(28, 17, 96, 0.57);
+        font-family: "Gill Sans", sans-serif;
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 44px;
+        letter-spacing: 0px;
+        text-align: center;
+        text-decoration: none
+        
     }
-    90%{
-        transform: scale(1.01);
+    
+    .goto:hover{
+        box-shadow: 10px 10px 10px rgba(40, 9, 87, 0.454);
     }
-    100%{
-        transform:scale(1)
+    
+    @keyframes goto_btn {
+    
+        0%{
+            transform:scale(1)
+    
+        }
+        75%{
+            transform: translateX(50px);
+            transform: scale(1.1);
+        }
+        90%{
+            transform: scale(1.01);
+        }
+        100%{
+            transform:scale(1)
+        }
+    }
+}
+@media (orientation:portrait) and (max-width: 900px){
+    header{
+        /* Прямоугольник 1 */
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        right: 100%;
+        top: 0px;
+        bottom: 0px;
+        background-image: linear-gradient(180.00deg, rgb(216, 136, 72),rgba(53, 49, 159, 0.809) 100%),
+        url("src/png-clipart-casino-lisboa-macau-hotel-gratis-apartment-hotel-lisboa-beach-building.png");
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+    
+    
+    
+    
+    .title{
+        /* Hotel Hub */
+        position: absolute;
+        width: 500px;
+        height: 85px;
+        left: 97px;
+        right: 700px;
+        top: 100px;
+        bottom: 0px;
+        color: rgb(0, 0, 0);
+        font-family:"Gill Sans", sans-serif ;
+        font-size: 75px;
+        font-weight: 800;
+        line-height: 75px;
+        letter-spacing: 0px;
+        text-align: left;
+    
+    }
+    
+    .ol{
+        position: absolute;
+        width: 342px;
+        height: 85px;
+        left: 92px;
+        right: 846px;
+        top: 197px;
+        bottom: 2216px;
+    }
+    
+    .li{
+        /* ~Бронирование отелей быстро и легко ~Множество броней отелей со всего мира ~Долгий опыт ~Качественное обслуживание */
+        position:relative;
+        width: 100%;
+        height: 30%;
+        left: 1px;
+        right: 50px;
+        top: 100px;
+        padding: 10px;
+        font-size: 25px;
+        font-family: "Gill Sans", sans-serif;
+    
+    }
+    
+    .nav{
+        /* Прямоугольник 2 */
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 64px;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 2434px;
+        box-shadow: 0px 27px 75px -12px rgb(154, 95, 48);
+        background: rgba(30, 24, 47, 0.47);
+    
+    }
+    
+    .btn{
+    
+        width: 10%;
+        height: 40px;
+        margin-top: 15px;
+        padding-left: 2.5%;
+        margin-left: 50px;
+        border-radius: 25px; 
+        border-color: transparent ;
+        background: rgb(129, 111, 178);
+    
+    }
+    
+    .container{
+        background-color: aqua;
+        position: relative;
+    
+    }
+    
+    
+    
+    .container .wrapper{
+        width: 50%;
+        height: 50%;
+        box-shadow: 10px 10px 10px black;
+        margin: 5rem auto;
+    }
+    
+    .container .wrapper-holder{
+        display: grid;
+        grid-template-columns: repeat(4, 100%);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    a{
+        text-decoration: none
+    }
+    
+    .goto{
+        animation-name: goto_btn;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        transform: scale(0.7);
+        transform: translateX(50px);
+        /* Прямоугольник 3 */
+        position: absolute;
+        width: 389px;
+        height: 85px;
+        left: 92px;
+        right: 799px;
+        top: 85%;
+        bottom: 1880px;
+        border-radius: 42.5px; 
+        background: rgba(222, 139, 72, 0.82);
+        border-color: transparent;
+        color: rgba(28, 17, 96, 0.57);
+        font-family: "Gill Sans", sans-serif;
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 44px;
+        letter-spacing: 0px;
+        text-align: center;
+        text-decoration: none
+        
+    }
+    
+    .goto:hover{
+        box-shadow: 10px 10px 10px rgba(40, 9, 87, 0.454);
+    }
+    
+    @keyframes goto_btn {
+    
+        0%{
+            transform:scale(1)
+    
+        }
+        75%{
+            transform: translateX(50px);
+            transform: scale(1.1);
+        }
+        90%{
+            transform: scale(1.01);
+        }
+        100%{
+            transform:scale(1)
+        }
     }
 }
