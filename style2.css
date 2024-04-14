@@ -1,9 +1,10 @@
 .Img{
     width: 250px;
-    height: 250px;
+    height: 250px;    
     border-radius: 10%;
 }
-   
+
+
 .container{
     display: flex;
     flex-direction: row;
@@ -14,7 +15,7 @@
     color: rgb(27, 17, 96);
     font-family: Poppins;
 
-    
+
 }
 
 .hotel_card{
@@ -93,7 +94,3 @@ body{
 #hotel_srch:hover{
     background: rgba(219, 152, 28, 0.97);
 }
-.goto_btn:hover{
-    background: rgba(219, 152, 28, 0.97);
-}
-

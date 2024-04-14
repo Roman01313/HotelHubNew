@@ -31,6 +31,7 @@ let del_btn = document.querySelector(".delete_btn")
 let result_card = document.querySelector(".result_card")
 let goto_btn = document.querySelector(".goto_btn")
 let search = document.querySelector("#hotel_srch")
+
 let container = document.querySelector(".container")
 let btn = document.querySelector('.btn_sumbit')
 //Создание внутренностей карточек Отеля через Js 
@@ -45,7 +46,7 @@ let hotel_dict = [hemer, tyfoul, gromur, boston, astoriya]
 
 for (let i = 0; i < hotel_dict.length; i += 1){
     container.innerHTML += hotel_dict[i].toHtml()//Добавление карточек отелей в контейнер на экране
-    
+
 }
 
 function calc(a , days){
@@ -83,15 +84,9 @@ function search_func(){
             container.innerHTML += hotel_dict[i].toHtml()//сортировка по алфавиту
         }
     }
-    else{
-        result_card.style.display = "flex"
-    }
+    console.log()
+    // else{
+    //     alert("None result")
+    // }
 }
 btn.addEventListener('click', search_func)
-
-del_btn.addEventListener('click', function(){
-    search.value = ''
-})
-goto_btn.addEventListener("click", function(){
-    result_card.style.display = "none"
-})

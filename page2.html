@@ -7,18 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="script2.js"></script>
-    <div class="result_card">
-        <h2 class="result_p">None Result</h2>
-        <p class="p">please, try again later</p>
-        <button class="goto_btn">go back</button>
-    </div>
-    <div class="input_div">
-        <input class="search" placeholder="Search" type="text"></input> 
-        <button class="delete_btn">Delete</button>
-    </div>
+    <input list="hotel_opt" id="hotel_srch" name="hotel_srch" placeholder="search" />
 
-    <div class="container">
+    <datalist id="hotel_opt">
+        <option class="opt" value="rating"></option>
+        <option class="opt" value="Name(A-Z)"></option>
+        <option class="opt" value="price(max-min)"></option>
+    </datalist>
+
+    <button class="btn_sumbit">Confirm</button>
+    <div class='container'>
         <!-- <div class="hotel_card">
             <h1>Hymer</h1>
             <img class="Img" src="src/IMG_8242.JPG">
