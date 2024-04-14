@@ -1,25 +1,3 @@
-
-// class Hotel {
-//     constructor(name, rait) {
-//         this.name = name,
-//         this.rait = rait
-//     }     
-//     toHtml(){
-//         return`<div class='card-small'>
-//                 <img src='/uploads/2022/11/card-bg.png'>
-//                 <p class='number'>${this.name}</p>
-//                 <div class='cvv'>${this.rait}</div>
-//             </div>`
-
-//     }
-//  }
- 
-// let cards = document.querySelector('.cards')
-// let hemer= new Hotel("Hemer", "9/10") 
-// cards.innerHTML += hemer.toHtml()
-     
-
-
 class Hotel{
     constructor(pict1, name, rait, desc, price ){
         this.pict1 = pict1 
@@ -48,6 +26,9 @@ function scrollDown() {
 }
 
 
+let sctreach = document.querySelector("#size")
+let result_card = document.querySelector(".result_card")
+let goto_btn = document.querySelector(".goto_btn")
 let search = document.querySelector("#hotel_srch")
 let container = document.querySelector(".container")
 let btn = document.querySelector('.btn_sumbit')
@@ -90,8 +71,11 @@ function search_func(){
             container.innerHTML += hotel_dict[i].toHtml()//Добавление карточек отелей в контейнер на экране
         }
     }
-    // else{
-    //     alert("None result")
-    // }
+    else{
+        result_card.style.display = "flex"
+    }
 }
 btn.addEventListener('click', search_func)
+goto_btn.addEventListener("click", function(){
+    result_card.style.display = "none"
+})

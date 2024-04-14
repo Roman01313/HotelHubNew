@@ -45,6 +45,26 @@ body{
     border-color: transparent;
 }
 
+.result_card{
+    display: none;
+    align-items: center;
+    margin: 50%;
+    width: 150px;
+    height: 200px;
+    box-shadow: -25px -10px 90px rgba(26, 6, 50, 0.486);
+    background: linear-gradient(180.00deg, rgba(211, 159, 117, 0.86),rgb(103, 46, 197) 100%);
+}
+.result_p{
+    font-family: "Gill Sans", sans-serif;    
+    color: rgb(27, 17, 96);
+}
+
+.goto_btn{
+    border-radius: 50px;
+    border-color: transparent;
+    background: rgba(244, 174, 40, 0.97);
+}
+
 .btn_sumbit{
     width: 10%;
     padding: 19px 20px;
@@ -61,6 +81,9 @@ body{
 }
 
 #hotel_srch:hover{
+    background: rgba(219, 152, 28, 0.97);
+}
+.goto_btn:hover{
     background: rgba(219, 152, 28, 0.97);
 }
 
