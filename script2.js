@@ -39,12 +39,23 @@ let hemer = new Hotel ("src/IMG_8244.JPG", "Hemer", 9, "Hemer - the best hotel i
 let tyfoul = new Hotel("src/IMG_8247.JPG", "Tyfoul", 5, "Tyfoul - not bad place to rest your time , rooms are so comfortable", 65)
 let gromur = new Hotel("src/IMG_8254.JPG", "Gromur", 10, "Gromur - is very comfortable place in New York, this hotel is very exited for mane people", 85)
 let boston = new Hotel("src/IMG_8249.JPG", "Boston", 8, "Boston - is modern Hotel in nearly D.C Washington, with many interesting interier disignes", 110)
-let hotel_dict = [hemer, tyfoul, gromur, boston]
+let astoriya = new Hotel("src/IMG_8242.JPG", "Astoriya", 10, "Astoriya - modern Hotel...etc", 150)
+let hotel_dict = [hemer, tyfoul, gromur, boston, astoriya]
 
 
 for (let i = 0; i < hotel_dict.length; i += 1){
     container.innerHTML += hotel_dict[i].toHtml()//Добавление карточек отелей в контейнер на экране
     
+}
+
+function calc(a , days){
+    let result = a.price * days
+    return result
+}
+for (let i = 0; i < hotel_dict.length; i += 1){
+    calc(hotel_dict[i].price, sctreach.value)
+    console.log(result)
+    console.log(sctreach.value)
 }
 
 
