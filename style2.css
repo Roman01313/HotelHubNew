@@ -1,4 +1,66 @@
 .Img{
     width: 250px;
     height: 250px;
+    border-radius: 10%;
 }
+   
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    width: 95%;
+    border-radius: 50px;
+    box-shadow: -25px -10px 90px rgba(26, 6, 50, 0.294);
+    color: rgb(27, 17, 96);
+    font-family: Poppins;
+
+    
+}
+
+.hotel_card{
+    margin: 50px;
+    padding-bottom: 300px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 250px;
+    height: 250px;
+    font-family: "Gill Sans", sans-serif; 
+    box-shadow: -25px -10px 0px rgba(52, 6, 104, 0.294);
+    border-radius: 92px;
+    background: linear-gradient(180.00deg, rgba(211, 159, 117, 0.86),rgb(103, 46, 197) 100%);
+}
+
+body{
+    background: linear-gradient(180.00deg, rgb(103, 46, 197),rgb(164, 111, 166) 60.305%,rgb(225, 175, 134) 100%);
+}
+
+#hotel_srch{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 41.5px;
+    font-size: 25px;
+    font-family: "Gill Sans", sans-serif;
+    background: rgba(244, 174, 40, 0.97);
+    border-color: transparent;
+}
+
+.btn_sumbit{
+    width: 10%;
+    padding: 19px 20px;
+    margin: 8px 0;
+    border-radius: 41.5px;
+    font-size: 15px;
+    font-family: "Gill Sans", sans-serif;
+    background: rgba(244, 174, 40, 0.97);
+    border-color: transparent;
+}
+
+.btn_sumbit:hover{
+    background: rgba(219, 152, 28, 0.97);
+}
+
+#hotel_srch:hover{
+    background: rgba(219, 152, 28, 0.97);
+}
+
