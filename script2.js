@@ -27,6 +27,7 @@ function scrollDown() {
 
 
 let sctreach = document.querySelector("#size")
+let del_btn = document.querySelector(".delete_btn")
 let result_card = document.querySelector(".result_card")
 let goto_btn = document.querySelector(".goto_btn")
 let search = document.querySelector("#hotel_srch")
@@ -52,14 +53,14 @@ function search_func(){
         container.innerHTML = ' '
         for(let i = 0; i < hotel_dict.length; i += 1){
             hotel_dict.sort((a, b) => b.rait - a.rait)
-            container.innerHTML += hotel_dict[i].toHtml()//Добавление карточек отелей в контейнер на экране
+            container.innerHTML += hotel_dict[i].toHtml()//Сортировка по рейтингу
         }
     }
     if (search.value == "price(max-min)"){ 
         container.innerHTML = ' '
         for(let i = 0; i < hotel_dict.length; i += 1){
             hotel_dict.sort((a, b) => b.price - a.price)
-            container.innerHTML += hotel_dict[i].toHtml()//Добавление карточек отелей в контейнер на экране
+            container.innerHTML += hotel_dict[i].toHtml()//сортировка по цене
         }
     }
     if (search.value == "Name(A-Z)"){ 
@@ -68,7 +69,7 @@ function search_func(){
             hotel_dict.sort(function(a,b){
                 if (a.name < b.name) return -1
             })
-            container.innerHTML += hotel_dict[i].toHtml()//Добавление карточек отелей в контейнер на экране
+            container.innerHTML += hotel_dict[i].toHtml()//сортировка по алфавиту
         }
     }
     else{
@@ -76,6 +77,10 @@ function search_func(){
     }
 }
 btn.addEventListener('click', search_func)
+
+del_btn.addEventListener('click', function(){
+    search.value = ''
+})
 goto_btn.addEventListener("click", function(){
     result_card.style.display = "none"
 })
