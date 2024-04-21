@@ -15,14 +15,14 @@ class Hotel{
             <p>${this.desc}</p>
             <p>${this.rait}/10</p>            
             <p>${this.price}$/day</p>
-            <input type="range" min="1" max="32" id=${this.key} value = "1" step = "1">
-            <p class = "gg">Total: </p>
-            <button class = "btn_done" id=${this.key}></button>
+            <input title="Days amount" type="range" min="1" max="31" id=${this.key} value = "1" step = "1">
+            <p class = "total_amount">Total: </p>
+            <button class = "btn_done" id=${this.key}>Посчитать/Забронировать</button>
         </div>  
     </div>`
     }
 
-    toCart(){
+    totalToCart(){
         
     }
 }
@@ -38,9 +38,9 @@ let btn = document.querySelector('.btn_sumbit')
 //Создание внутренностей карточек Отеля через Js 
 
 let hemer = new Hotel ("src/IMG_8244.JPG", "Hemer", 9, "Hemer - the best hotel in Canada...", 90, '#11111')
-let tyfoul = new Hotel("src/IMG_8247.JPG", "Tyfoul", 5, "Tyfoul - not bad place to rest your time,roo...", 65, '#11112')
-let gromur = new Hotel("src/IMG_8254.JPG", "Gromur", 10, "Gromur - is very comfortable place in New York...", 85, '#11113')
-let boston = new Hotel("src/IMG_8249.JPG", "Boston", 8, "Boston - is modern Hotel in nearly D.C Washington...", 110, '#11114')
+let tyfoul = new Hotel("src/IMG_8247.JPG", "Tyfoul", 5, "Tyfoul - not bad place to rest your...", 65, '#11112')
+let gromur = new Hotel("src/IMG_8254.JPG", "Gromur", 10, "Gromur - is very comfortable place...", 85, '#11113')
+let boston = new Hotel("src/IMG_8249.JPG", "Boston", 8, "Boston - is modern Hotel in nearly...", 110, '#11114')
 let astoriya = new Hotel("src/IMG_8242.JPG", "Astoriya", 10, "Astoriya - modern Hotel...etc", 150, '#11115')
 let hotel_dict = [hemer, tyfoul, gromur, boston, astoriya]
 
@@ -87,6 +87,8 @@ document.querySelector(".container").addEventListener('click', event => {
         for (let i = 0; i < hotel_dict.length; i += 1){
             if (event.target.id == hotel_dict[i].key){
                 total = document.getElementById(hotel_dict[i].key).value * hotel_dict[i].price
+                let total_p = document.querySelectorAll('.total_amount')
+                total_p[i].innerHTML = "Total:" + total + "$  "  + document.getElementById(hotel_dict[i].key).value +'   days' 
                 console.log(total)
             }
         
@@ -94,7 +96,3 @@ document.querySelector(".container").addEventListener('click', event => {
 
     }
 })
-    // for(let i =0 ; i < hotel_dict.length; i += 1){
-    //     console.log(btns)
-    // }
-

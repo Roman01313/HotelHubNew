@@ -70,6 +70,14 @@ body{
     background: rgba(244, 174, 40, 0.97);
 } */
 
+.btn_done{
+    background: rgba(244, 174, 40, 0.97);
+    width: 50%;
+    height: 40px;
+    border-radius: 41.5px;
+    border-color: transparent;
+
+}
 
 .btn_sumbit{
     position: relative;
