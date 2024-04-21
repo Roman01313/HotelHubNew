@@ -74,6 +74,15 @@ function search_func(){
             container.innerHTML += hotel_dict[i].toHtml()//сортировка по алфавиту
         }
     }
+    else{
+        
+    }
+    for (let i = 0; i < hotel_dict.length; i += 1){
+        if (search.value == hotel_dict[i].name){
+            container.innerHTML = hotel_dict[i].toHtml()
+        }
+    }
+
     // console.log(document.getElementById(hemer.key).value)
     // console.log(document.getElementById(gromur.key).value)
 }

@@ -7,6 +7,7 @@
     
     
     .container{
+        
         display: flex;
         flex-direction: row;
         flex-wrap:wrap;
@@ -195,7 +196,15 @@
         background: rgba(244, 174, 40, 0.97);
         border-color: transparent;
     }
-    
+    .None{
+        position: absolute;
+        display: flex;
+        width: 600px;
+        height: 500px;
+        border-radius: 41.5px;
+        background: linear-gradient(180.00deg, rgb(103, 46, 197),rgb(164, 111, 166) 60.305%,rgb(225, 175, 134) 100%); ;
+    }
+
     .btn_sumbit:hover{
         background: rgba(219, 152, 28, 0.97);
     }
@@ -203,5 +212,9 @@
     #hotel_srch:hover{
         background: rgba(219, 152, 28, 0.97);
     }
+    .btn_done:hover{
+        background: rgba(219, 152, 28, 0.97);
+    }
     
 }
+
