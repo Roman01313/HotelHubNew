@@ -4,6 +4,20 @@
         height: 270px;    
         border-radius: 10%;
     }
+
+    
+    .none_menu{
+        position: fixed;
+        display: none;
+        margin-top: 10%;
+        margin-left: 30%;
+        width: 600px;
+        height: 500px;
+        box-shadow: -25px 10px 30px rgb(52, 6, 104);
+        border-radius: 41.5px;
+        background: linear-gradient(180.00deg, rgb(103, 46, 197),rgb(164, 111, 166) 60.305%,rgb(225, 175, 134) 100%); ;
+    }
+
     
     
     .container{
@@ -196,11 +210,13 @@
         background: rgba(244, 174, 40, 0.97);
         border-color: transparent;
     }
-    .None{
-        position: absolute;
+    .none_menu{
+        position: fixed;
         display: flex;
+
         width: 600px;
         height: 500px;
+        box-shadow: -25px 10px 30px rgb(52, 6, 104);
         border-radius: 41.5px;
         background: linear-gradient(180.00deg, rgb(103, 46, 197),rgb(164, 111, 166) 60.305%,rgb(225, 175, 134) 100%); ;
     }

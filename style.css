@@ -76,7 +76,7 @@
     
     .nav{
         /* Прямоугольник 2 */
-        position: absolute;
+        position: fixed;
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -180,7 +180,7 @@
         }
     }
 }
-@media (orientation:portrait) and (max-width: 900px){
+@media (orientation:portrait) and (max-width: 1109px){
     header{
         /* Прямоугольник 1 */
         position: absolute;

@@ -17,7 +17,7 @@ class Hotel{
             <p>${this.price}$/day</p>
             <input title="Days amount" type="range" min="1" max="31" id=${this.key} value = "1" step = "1">
             <p class = "total_amount">Total: </p>
-            <button class = "btn_done" id=${this.key}>Посчитать/Забронировать</button>
+            <button class = "btn_done" id=${this.key}>to count</button>
         </div>  
     </div>`
     }
@@ -28,6 +28,7 @@ class Hotel{
 }
 
 
+
 function scrollDown() {
     window.scrollTo({top: window.innerHeight, behavior: 'smooth' });
 }
@@ -35,6 +36,7 @@ function scrollDown() {
 let search = document.querySelector("#hotel_srch")
 let container = document.querySelector(".container")
 let btn = document.querySelector('.btn_sumbit')
+// let b = document.querySelector('.none_menu')
 //Создание внутренностей карточек Отеля через Js 
 
 let hemer = new Hotel ("src/IMG_8244.JPG", "Hemer", 9, "Hemer - the best hotel in Canada...", 90, '#11111')
@@ -42,7 +44,11 @@ let tyfoul = new Hotel("src/IMG_8247.JPG", "Tyfoul", 5, "Tyfoul - not bad place 
 let gromur = new Hotel("src/IMG_8254.JPG", "Gromur", 10, "Gromur - is very comfortable place...", 85, '#11113')
 let boston = new Hotel("src/IMG_8249.JPG", "Boston", 8, "Boston - is modern Hotel in nearly...", 110, '#11114')
 let astoriya = new Hotel("src/IMG_8242.JPG", "Astoriya", 10, "Astoriya - modern Hotel...etc", 150, '#11115')
-let hotel_dict = [hemer, tyfoul, gromur, boston, astoriya]
+let grand_itail = new Hotel("src/IMG_8245.JPG", "Grand Itail", 5, "Grand Itail - modern Hotel...etc", 60, '#11116')
+let brosso = new Hotel("src/IMG_8251.JPG", "Brosso", 9, 'Brosso - modern Hotel...etc', 150, '#11117')
+let saveli = new Hotel("src/IMG_8253.JPG", "Saveli", 2, "Saveli - modern Hotel...etc", 130, '#11118')
+let crimersone = new Hotel("src/IMG_8250.JPG", "Crimerson", 10, "Crimerson - modern Hotel...etc", 90, '#11119')
+let hotel_dict = [hemer, tyfoul, gromur, boston, astoriya, grand_itail, brosso, saveli, crimersone ]
 
 
 for (let i = 0; i < hotel_dict.length; i += 1){
@@ -74,9 +80,8 @@ function search_func(){
             container.innerHTML += hotel_dict[i].toHtml()//сортировка по алфавиту
         }
     }
-    else{
-        
-    }
+
+
     for (let i = 0; i < hotel_dict.length; i += 1){
         if (search.value == hotel_dict[i].name){
             container.innerHTML = hotel_dict[i].toHtml()
@@ -97,7 +102,7 @@ document.querySelector(".container").addEventListener('click', event => {
             if (event.target.id == hotel_dict[i].key){
                 total = document.getElementById(hotel_dict[i].key).value * hotel_dict[i].price
                 let total_p = document.querySelectorAll('.total_amount')
-                total_p[i].innerHTML = "Total:" + total + "$  "  + document.getElementById(hotel_dict[i].key).value +'   days' 
+                total_p[i].innerHTML = "Total:   " + total + "$  "  + document.getElementById(hotel_dict[i].key).value +'   days' 
                 console.log(total)
             }
         
