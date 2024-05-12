@@ -54,6 +54,7 @@
     .ol{
         position: absolute;
         width: 342px;
+        padding: 23px;
         height: 85px;
         left: 92px;
         right: 846px;
