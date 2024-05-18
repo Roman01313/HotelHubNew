@@ -34,6 +34,8 @@
     
     .title{
         /* Hotel Hub */
+        animation-name: slide;
+        animation-duration: 2s;
         position: absolute;
         width: 342px;
         height: 85px;
@@ -53,6 +55,8 @@
     
     .ol{
         position: absolute;
+        animation-name: slide;
+        animation-duration: 2s;
         width: 342px;
         height: 85px;
         left: 92px;
@@ -77,10 +81,11 @@
     
     .nav{
         /* Прямоугольник 2 */
+        animation: slide 2s;
         position: fixed;
         display: flex;
         flex-direction: row;
-        width: 100%;
+        width: 130%;
         height: 64px;
         left: 0;
         right: 0;
@@ -132,11 +137,8 @@
     }
     
     .goto{
-        animation-name: goto_btn;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-        transform: scale(0.7);
-        transform: translateX(50px);
+        animation-name: slide;
+        animation-duration: 1s;
         /* Прямоугольник 3 */
         position: absolute;
         width: 389px;
@@ -161,23 +163,17 @@
     
     .goto:hover{
         box-shadow: 10px 10px 10px rgba(40, 9, 87, 0.454);
+
     }
-    
-    @keyframes goto_btn {
-    
-        0%{
-            transform:scale(1)
-    
+
+    @keyframes slide {
+        from{
+            opacity: 0%;
+            transform: translateX(-190px);
         }
-        75%{
-            transform: translateX(50px);
-            transform: scale(1.1);
-        }
-        90%{
-            transform: scale(1.01);
-        }
-        100%{
-            transform:scale(1)
+        to{
+            opacity: 100%;
+            transform: translateX(0px);
         }
     }
 }
