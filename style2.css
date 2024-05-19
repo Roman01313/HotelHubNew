@@ -31,6 +31,10 @@
     
     
     }
+
+    .info{
+        display:static;
+    }
     
     .hotel_card{
         display: block;
@@ -53,8 +57,8 @@
     }
     
     #hotel_srch{
-        position: flex;
-        width: 80%;
+        position: static;
+        width: 2%;
         padding: 12px 20px;
         margin: 8px 0;
         border-radius: 41.5px;
@@ -88,16 +92,16 @@
     
     .btn_done{
         background: rgba(244, 174, 40, 0.97);
-        width: 50%;
-        height: 40px;
+        width: 80%;
+        height: 55px;
         border-radius: 41.5px;
         border-color: transparent;
     
     }
     
     .btn_sumbit{
-        position: absolute;
-        width: 10%;
+        position: static;
+        width: 20%;
         left: 80%;
         padding: 19px 20px;
         margin: 8px 0;
@@ -108,14 +112,38 @@
         border-color: transparent;
     }
 
+    .Srch_div{
+        width: 80%;
+    }
     
-    
+    .btn_done:hover{
+        background: rgba(219, 152, 28, 0.97);
+    }
+    .Img:hover{
+        transition-property: transform;
+        transform: scale(1.05);
+        transition-duration: 0.8s;
+    }
+    .Img{
+        transition-property: transform;
+        transform: scale(1);
+        transition-duration: 0.8s;
+    }
+
     .btn_sumbit:hover{
         background: rgba(219, 152, 28, 0.97);
     }
     
     #hotel_srch:hover{
         background: rgba(219, 152, 28, 0.97);
+        transition-property: width;
+        width: 70%;
+        transition-duration: 1.5s;
+    }
+    #hotel_srch{
+        transition-property: width;
+        width: 2%;
+        transition-duration: 1s;
     }
 
     @keyframes grd {
