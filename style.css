@@ -176,7 +176,14 @@
             transform: translateX(0px);
         }
     }
+    .info{
+        position:relative;
+        top: 900px;
+        text-align: center;
+    }
 }
+
+
 @media (orientation:portrait) and (max-width: 1109px){
     header{
         /* Прямоугольник 1 */

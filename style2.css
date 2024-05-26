@@ -38,8 +38,9 @@
     
     .hotel_card{
         display: block;
+        position: static;
         margin: 30px;
-        padding-bottom: 300px;
+        padding-bottom: 300px; 
         padding-left: 50px;
         padding-right: 50px;
         width: 270px;

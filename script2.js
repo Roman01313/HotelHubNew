@@ -32,12 +32,13 @@ class Hotel{
 function scrollDown() {
     window.scrollTo({top: window.innerHeight, behavior: 'smooth' });
 }
-
+let about_us_btn = document.querySelector('.btn')
 let search = document.querySelector("#hotel_srch")
 let container = document.querySelector(".container")
 let btn = document.querySelector('.btn_sumbit')
 // let b = document.querySelector('.none_menu')
 //Создание внутренностей карточек Отеля через Js 
+
 
 let hemer = new Hotel ("src/IMG_8244.JPG", "Hemer", 9, "Hemer - the best hotel in Canada...", 90, '#11111')
 let tyfoul = new Hotel("src/IMG_8247.JPG", "Tyfoul", 5, "Tyfoul - not bad place to rest your...", 65, '#11112')
