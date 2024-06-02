@@ -59,7 +59,7 @@
     
     #hotel_srch{
         position: static;
-        width: 2%;
+        width: 70%;
         padding: 12px 20px;
         margin: 8px 0;
         border-radius: 41.5px;
@@ -137,14 +137,11 @@
     
     #hotel_srch:hover{
         background: rgba(219, 152, 28, 0.97);
-        transition-property: width;
-        width: 70%;
-        transition-duration: 1.5s;
-    }
-    #hotel_srch{
-        transition-property: width;
-        width: 2%;
-        transition-duration: 1s;
+    }    
+    .desc{
+        position: relative;
+        left: 54%;
+        bottom: 200px;
     }
 
     @keyframes grd {
@@ -152,7 +149,28 @@
         50%{background-position:91% 100%}
         100%{background-position:10% 0%}
     }
+    @keyframes scale_up {
+        0%{width: 270px}
+        100%{width: 760px}
+    }
+    @keyframes scale_down {
+        0%{width: 760px}
+        100%{width: 270px}
+    }
+    @keyframes spawn {
+        0%{color: rgba(57, 27, 134, 0)}
+        100%{color:rgb(58, 27, 134)}
+    }
+    @keyframes dele{
+        0%{color:rgb(58, 27, 134)}
+        100%{color: rgba(57, 27, 134, 0)}
+    }
 
+    .desc{
+        position: relative;
+        left: 60%;
+        bottom: 540px;
+    }
     .hotel_card:hover{
         transition-property: border-radius, transform, color;
         border-radius: 99px;
@@ -167,6 +185,19 @@
         transform: scale(1);
         transition-duration: 1s;
     }
+
+    .more{
+        position: absolute;
+        left: 80%;
+        bottom: 92%;
+        border-color: transparent;
+        border-radius: 50px;
+        scale: 1.5;
+        background:rgba(219, 152, 28, 0.97) ;
+    
+    }
+
+    
 
     
 }
